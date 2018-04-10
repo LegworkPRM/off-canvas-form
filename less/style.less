@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+// General
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.page {
+  display: block;
+  width: 100%;
+  padding: 0 0 150px 0;
+}
+
+// Documentation
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+h4 {
+  font-size: 2em;
+  color: #455b64;
+  margin: 10px 0;
+  padding-top: 30px;
+}
+
+p {
+  font-size: 1em;
+  color: #617d8a;
+  line-height: 175%;
+  margin: 20px 0;
+}
+
+ol {
+  padding: 20px 10px;
+  font-size: 1em;
+  color: #617d8a;
+  line-height: 200%;
+  margin: 0 0 20px 0;
+  
+  li {
+    margin: 0;
+  }
+}
+
+header {
+  width: 90%;
+  padding: 100px 5%;
+  display: block;
+  background-color: #455b64;
+}
+
+.description {
+  width: 90%;
+  display: block;
+  padding: 50px 5%;
+  background-color: #44a8de;
+  margin-bottom: 50px;
+  h3 {
+    color: #fff;
+    text-align: left;
+  }
+}
+
+.instructional-text {
+  width: 90%;
+  padding: 10px 5%;
+  
+  img {
+    width: 100%;
+  }
+}
+
+footer {
+  display: block;
+  width: 90%;
+  padding: 10px 5%;
+  p {
+    text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  h1 {
+    font-size: 3em;
+  }
+  
+  header {
+    width: 100%;
+    padding: 100px 0;
+  }
+  
+  .description {
+    width: 100%;
+    padding: 50px 0;
+  }
+  
+  .instructional-text {
+    width: 100%;
+    padding: 10px 0;
+    
+    img {
+      display: block;
+      width: 300px;
+      margin: 10px 0;
+    }
+  }
+  
+  .form-css img:nth-child(n+5), .form-scripts img:nth-child(n+5) {
+    width: 500px;
+  }
+  
+  .content-wrapper {
+    width: 850px;
+    margin: 0 auto;
+  }
+}
+
+
+// Demo
+a.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+  width: 215px;
+  height: 40px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  border-radius: 50px;
+  // Gradient Background
+  background: #f0381a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    -160deg,
+    #ff512f,
+    #dd244d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    -160deg,
+    #ff512f,
+    #dd244d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 10px 60px rgba(69, 91, 100, 0.35);
+}
+
+a.buttons.view-pricing-button {
+  margin-top: 25px;
+  border: 2px solid #ff512f;
+  color: #fff;
+  background: none;
+  box-shadow: none;
+}
+/* Horizontal bar that holds the close button */
+.modal-close-bar {
+    display: block;
+    width: 100%;
+    padding: 30px 0;
+}
+
+/* Tap target with 10px padding to ensure it is easily clickable */
+.modal-close-bar .button-wrapper {
+    display: block;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Initial horizontal bar in the (X) of the close button */
+.modal-close-bar .button-wrapper .close-button {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #617d8a;
+    border-radius: 50px;
+    transform: rotate(45deg);
+}
+
+/* Use CSS to create an ::after element that feeds from the parents' styles
+to create a second bar for the (X) */
+.modal-close-bar .close-button::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    position: relative;
+    /* Rotate an extra 45deg to create and X */
+    transform: rotate(90deg);
+}
+
+/* Modal window that holds the Hubspot form */
+.footer-container-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  width: 90%;
+  padding: 0 5%;
+  height: 100%;
+  background-color: #fff;
+  /* Hide the form by with opacity and sliding it to the right */
+  opacity: 0;
+  margin-right: -100%;
+  overflow-y: scroll;
+  transition: all 0.45s cubic-bezier(0.56, 0.64, 0.13, 1);
+}
+
+/* Class that applies to the form to animate it into view */
+.form-slide-in-toggle {
+  margin-right: 0;
+  opacity: 1;
+}
+
+/* General form styling */
+h3.form-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #374851;
+  text-align: left;
+}
+span.form-sub-header {
+  font-size: 22px;
+  font-weight: 300;
+  color: #617d8a;
+}
+form {
+  width: 100%;
+  padding: 0;
+}
+form fieldset {
+  border: none;
+  margin: 0;
+}
+form label {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #455b64;
+  margin-top: 15px;
+}
+form .hs-form-required {
+  color: red;
+  margin-left: 5px;
+}
+.hs-form-field {
+  padding-top: 40px;
+  width: 100%;
+}
+.hs-input {
+  width: 100% !important;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  font-size: 1em;
+  padding-left: 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 2px solid rgba(97, 125, 138, 0.39);
+  color: #455b64;
+  outline: none;
+  -webkit-transition: all 1s cubic-bezier(0, 0.63, 0.19, 1);
+  transition: all 1s cubic-bezier(0, 0.63, 0.19, 1);
+  margin-top: 20px;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+  border-bottom: 2px solid #617d8a;
+}
+form input[type="submit"] {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 45px;
+  border-radius: 50px;
+  background: #f0381a;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(-160deg, #ff512f, #dd244d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-box-shadow: 0 10px 60px rgba(69, 91, 100, 0.35);
+          box-shadow: 0 10px 60px rgba(69, 91, 100, 0.35);
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  h3.form-title {
+    margin: 0px;
+    line-height: auto;
+  }
+  span.form-sub-header {
+    font-size: 65%;
+  }
+  form {
+    margin-top: 35px;
+  }
+  form input[type="submit"] {
+    -webkit-transition: all 0.8s cubic-bezier(0, 0.63, 0.19, 1);
+    transition: all 0.8s cubic-bezier(0, 0.63, 0.19, 1);
+  }
+  form input[type="submit"]:hover {
+    -webkit-box-shadow: 0 5px 20px rgba(69, 91, 100, 0.2);
+    box-shadow: 0 5px 20px rgba(69, 91, 100, 0.2);
+  }
+}
+@media screen and (min-width: 1050px) {
+    .modal-close-bar {
+        padding-bottom: 50px;
+    }
+    .modal-close-bar .button-wrapper .close-button {
+        -webkit-transition: all 0.4s cubic-bezier(0, 0.63, 0.19, 1);
+        transition: all 0.4s cubic-bezier(0, 0.63, 0.19, 1);
+    }
+
+    /* When the close button tap target is hovered,
+    apply a slight animation to the close button */
+    .modal-close-bar .button-wrapper:hover .close-button {
+        transform: rotate(135deg);
+    }
+    .footer-container-wrapper {
+        width: 750px;
+        padding: 0;
+        display: flex;
+        box-shadow: 0 0 150px rgba(97, 125, 138, 0.38);
+        justify-content: center;
+        transition: all 0.5s cubic-bezier(0.56, 0.64, 0.13, 1);
+    }
+}
+@media screen and (min-width: 1300px) {
+  .form-title {
+    display: flex;
+    flex-direction: column;
+  }
+  h3.form-title {
+    font-size: 4em;
+    line-height: 100%;
+  }
+
+  /* Form subheader */
+  span.form-sub-header {
+    font-size: 40%;
+    display: inline-block;
+    line-height: 100%;
+    margin: -20px 0;
+  }
+
+  /* This class may change from time to time depending on your template
+  setup; if you have any questions, feel free to ask me */
+  span.form-sub-header.sub-header-line-1 {
+    padding-top: 65px;
+  }
+}
