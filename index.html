@@ -1,139 +1,213 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Off-Canvas Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism.css'>
 
-      <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
 
   <div class="page">
-  <header>
-    <div class="content-wrapper">
-      <h1>Hubspot Off-Canvas Form</h1>
-      <h2>A lightweight plugin for off-canvas forms</h2>
-      <a class="buttons schedule-a-demo-cta demo-button" href="#0">Demo</a>
-    </div>
-  </header>
+    <header>
+      <div class="content-wrapper">
+        <h1>Hubspot Off-Canvas Form</h1>
+        <h2>A lightweight plugin for off-canvas forms</h2>
+        <a class="buttons schedule-a-demo-cta demo-button" href="#0">Demo</a>
+      </div>
+    </header>
 
-  <div class="description">
-    <div class="content-wrapper">
-      <h3>Off-Canvas is lightweight, easy to implement, and compatible with IE7+, Chrome, Firefox, and Safari</h3>
+    <div class="description">
+      <div class="content-wrapper">
+        <h3>Off-Canvas is lightweight, easy to implement, and compatible with IE7+, Chrome, Firefox, and Safari</h3>
+      </div>
     </div>
-  </div>
 
-  <div class="instructional-text">
-    <div class="content-wrapper">
-      <h4>Template</h4>
-      <ol>
-        <li>Navigate to the landing page you wish to implement Off-Canvas with and click <b>Edit</b>.</li>
-        <li>Click the <b>Settings Tab</b> and click on the <b>Advanced Options</b> dropdown.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/settings.png?raw=true">
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/advanced-options.png?raw=true">
-        <li>Click <b>Edit Template</b>.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/edit-template.png?raw=true">
-        <li>Create a new <b>Module Group</b> and place it at the very bottom of thte page. Create a Custom HTML field and a Form Field and place them inside the Module Group you just created.</li>
-        <p>Note: If you already have a form within your template, delete it and follow the instructions above.</p>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/module-group.png?raw=true">
-        <li><b>Publish</b> your template changes.</li>
-      </ol>
+    <div class="instructional-text">
+      <div class="content-wrapper">
+        <h4>Template</h4>
+        <ol>
+          <li>Navigate to the landing page you wish to implement Off-Canvas with and click <b>Edit</b>.</li>
+          <li>Click the <b>Settings Tab</b> and click on the <b>Advanced Options</b> dropdown.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/settings.png?raw=true">
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/advanced-options.png?raw=true">
+          <li>Click <b>Edit Template</b>.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/edit-template.png?raw=true">
+          <li>Create a new <b>Module Group</b> and place it at the very bottom of thte page. Create a Custom HTML field and a Form Field and place them inside the Module Group you just created.</li>
+          <p>Note: If you already have a form within your template, delete it and follow the instructions above.</p>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/module-group.png?raw=true">
+          <li><b>Publish</b> your template changes.</li>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="instructional-text">
-    <div class="content-wrapper">
-      <h4>Custom HTML Close Button</h4>
-      <ol>
-        <li>Navigate back to your landing page and click the <b>Edit Modules</b> icon in the sidebar menu.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/edit-module.png?raw=true">
-        <li>Select the last custom HTML module in your list of modules.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/custom-html.png?raw=true">
-        <li>Copy and paste the following code into the custom HTML textarea and save your project.</li>
-        <pre class="language-markup"><code class="language-markup">&lt;div class=&quot;modal-close-bar&quot;&gt;
+    <div class="instructional-text">
+      <div class="content-wrapper">
+        <h4>Custom HTML Close Button</h4>
+        <ol>
+          <li>Navigate back to your landing page and click the <b>Edit Modules</b> icon in the sidebar menu.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/edit-module.png?raw=true">
+          <li>Select the last custom HTML module in your list of modules.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/custom-html.png?raw=true">
+          <li>Copy and paste the following code into the custom HTML textarea and save your project.</li>
+          <pre class="language-markup"><code class="language-markup">&lt;div class=&quot;modal-close-bar&quot;&gt;
   &lt;div class=&quot;button-wrapper&quot;&gt;
     &lt;span class=&quot;close-button&quot;&gt;&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-      </ol>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="instructional-text form-css">
-    <div class="content-wrapper">
-      <h4>Form Styles</h4>
-      <p>An external stylesheet will need to be added to your landing page in order for the plugin to function properly.</p>
-      <ol>
-        <li>Navigate to the landing page you are implementing Off-Canvas with and click <b>Edit</b>.</li>
-        <li>Click the <b>Settings Tab</b> and click the <b>Advanced Options</b> dropdown.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/settings.png?raw=true">
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/advanced-options.png?raw=true">
-        <li>Scroll down to <b>Stylesheets</b> and locate <b>Page Stylesheets</b>.</li>
-        <li>Click <b>Attach a stylesheet</b></li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/attach-stylesheet.png?raw=true">
-        <li>From the dropdown list, select <b>Custom/pages/css/off-canvas-form-styles.css</b>.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/css-file.png?raw=true">
-        <p>If you have more than one CSS file attached, make sure the Off-Canvas stylesheet is the last in the list.</p>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/css-last-in-list.png?raw=true">
-      </ol>
+    <div class="instructional-text form-css">
+      <div class="content-wrapper">
+        <h4>Form Styles</h4>
+        <p>An external stylesheet will need to be added to your landing page in order for the plugin to function properly.</p>
+        <ol>
+          <li>Navigate to the landing page you are implementing Off-Canvas with and click <b>Edit</b>.</li>
+          <li>Click the <b>Settings Tab</b> and click the <b>Advanced Options</b> dropdown.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/settings.png?raw=true">
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/advanced-options.png?raw=true">
+          <li>Scroll down to <b>Stylesheets</b> and locate <b>Page Stylesheets</b>.</li>
+          <li>Click <b>Attach a stylesheet</b></li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/attach-stylesheet.png?raw=true">
+          <li>From the dropdown list, select <b>Custom/pages/css/off-canvas-form-styles.css</b>.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/css-file.png?raw=true">
+          <p>If you have more than one CSS file attached, make sure the Off-Canvas stylesheet is the last in the list.</p>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/css-last-in-list.png?raw=true">
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="instructional-text form-scripts">
-    <div class="content-wrapper">
-      <h4>Form Scripts</h4>
-      <p>An external JavaScript file will need to be added to your landing page in order for the plugin to function properly.</p>
-      <ol>
-        <li>Navigate to the landing page you are implementing Off-Canvas with and click <b>Edit</b>.</li>
-        <li>Click the <b>Settings Tab</b> and click the <b>Advanced Options</b> dropdown.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/settings.png?raw=true">
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/advanced-options.png?raw=true">
-        <li>Scroll down to <b>Footer HTML</b>.</li>
-        <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/footer-html.png?raw=true">
-        <li>Copy and paste the following tokens into the <b>Footer HTML</b> textarea and save your landing page.</li>
-        <pre class="language-markup"><code class="language-markup">&lt;script src=&apos;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js&apos;&gt;&lt;/script&gt;
+    <div class="instructional-text form-scripts">
+      <div class="content-wrapper">
+        <h4>Form Scripts</h4>
+        <p>An external JavaScript file will need to be added to your landing page in order for the plugin to function properly.</p>
+        <ol>
+          <li>Navigate to the landing page you are implementing Off-Canvas with and click <b>Edit</b>.</li>
+          <li>Click the <b>Settings Tab</b> and click the <b>Advanced Options</b> dropdown.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/settings.png?raw=true">
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/advanced-options.png?raw=true">
+          <li>Scroll down to <b>Footer HTML</b>.</li>
+          <img src="https://github.com/LegworkPRM/off-canvas-form/blob/master/img/footer-html.png?raw=true">
+          <li>Copy and paste the following tokens into the <b>Footer HTML</b> textarea and save your landing page.</li>
+          <pre class="language-markup"><code class="language-markup">&lt;script src=&apos;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js&apos;&gt;&lt;/script&gt;
 &lt;script src=&apos;&#123;&#123; get_public_template_url('Custom/page/js/off-canvas-form-scripts.js') &#125;&#125;&apos;&gt;&lt;/script&gt;</code></pre>
-        <p>If you have other script files in your footer, make sure the tokens above are at the top of the list.</p>
-      </ol>
+          <p>If you have other script files in your footer, make sure the tokens above are at the top of the list.</p>
+        </ol>
+      </div>
     </div>
-  </div>
-  <div class="instructional-text">
-    <div class="content-wrapper">
-      <h4>Initialize Plugin</h4>
-      <p>Simply add the class name "schedule-a-demo-cta" to any button to link it to your Off-Canvas form.</br> This may need to be done with JavaScript; if so, contact Alex for assistance.</p>
+    <div class="instructional-text">
+      <div class="content-wrapper">
+        <h4>Initialize Plugin</h4>
+        <p>Simply add the class name "schedule-a-demo-cta" to any button to link it to your Off-Canvas form.</br> This may need to be done with JavaScript; if so, contact Alex for assistance.</p>
+      </div>
     </div>
+
+
   </div>
-  
 
-</div>
+  <footer>
+    <p>&copy;<span class="year">XXXX</span> All works Legwork PRM</p>
+  </footer>
 
-<footer><p>&copy;<span class="year">XXXX</span> All works Legwork PRM</p></footer>
+  <!-- Form -->
+  <div class="footer-container-wrapper">
+    <div class="footer-container container-fluid">
 
-<!-- Form -->
-<div class="footer-container-wrapper">
-  <div class="footer-container container-fluid">
+      <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+          <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
 
-    <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
-      <div class="row-fluid ">
-        <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
-
-          <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
-            <div class="row-fluid ">
-              <div class="span12 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="12">
-                <div class="cell-wrapper layout-widget-wrapper">
-                  <span id="hs_cos_wrapper_module_15232957462659" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><div class="modal-close-bar">
+            <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+              <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="12">
+                  <div class="cell-wrapper layout-widget-wrapper">
+                    <span id="hs_cos_wrapper_module_15232957462659" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><div class="modal-close-bar">
                     <div class="button-wrapper">
                       <span class="close-button"></span>
+                  </div>
                 </div>
+                </span>
               </div>
-              </span>
+              <!--end layout-widget-wrapper -->
             </div>
-            <!--end layout-widget-wrapper -->
+            <!--end widget-span -->
+          </div>
+          <!--end row-->
+        </div>
+        <!--end row-wrapper -->
+
+        <div class="row-fluid-wrapper row-depth-1 row-number-3">
+          <div class="row-fluid ">
+            <div class="span12 widget-span widget-type-form " style="" data-widget-type="form" data-x="0" data-w="12">
+              <div class="cell-wrapper layout-widget-wrapper">
+                <span id="hs_cos_wrapper_module_15232924015675" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget"><h3 id="hs_cos_wrapper_module_15232924015675_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Schedule a Demo<br><span class="form-sub-header sub-header-line-1">No Setup Fee. No Contracts. Starting at $99/mo.</span></h3>
+
+                <div id="hs_form_target_module_15232924015675">
+                  <form novalidate="" accept-charset="UTF-8" action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/1694637/99694ccd-c72b-4d24-a287-8433f3a3612a" enctype="multipart/form-data" id="hsForm_99694ccd-c72b-4d24-a287-8433f3a3612a_2307"
+                    method="POST" class="hs-form stacked hs-custom-form hs-form-private hs-form-99694ccd-c72b-4d24-a287-8433f3a3612a_8f09ebb8-e4cf-422e-90e9-fa0ca5b8abf9" data-form-id="99694ccd-c72b-4d24-a287-8433f3a3612a" data-portal-id="1694637" target="target_iframe_99694ccd-c72b-4d24-a287-8433f3a3612a_2307"
+                    data-reactid=".hbspt-forms-0">
+                    <fieldset class="form-columns-2" data-reactid=".hbspt-forms-0.0:$0">
+                      <div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$firstname"><label id="label-firstname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your First name" for="firstname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0.0">First name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0.1">*</span></label>
+                        <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.1"></legend>
+                        <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.$firstname"><input id="firstname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="text" name="firstname" required="" placeholder="" autocomplete="given-name" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.$firstname.0" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"></div>
+                      </div>
+                      <div class="hs_lastname hs-lastname hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$lastname"><label id="label-lastname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Last name" for="lastname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0.0">Last name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0.1">*</span></label>
+                        <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.1"></legend>
+                        <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.$lastname"><input id="lastname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="text" name="lastname" required="" placeholder="" autocomplete="family-name" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.$lastname.0"></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$1">
+                      <div class="hs_company hs-company hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$1.1:$company"><label id="label-company-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Practice Name" for="company-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$1.1:$company.0"><span data-reactid=".hbspt-forms-0.0:$1.1:$company.0.0">Practice Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$1.1:$company.0.1">*</span></label>
+                        <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$1.1:$company.1"></legend>
+                        <div class="input" data-reactid=".hbspt-forms-0.0:$1.1:$company.$company"><input id="company-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="text" name="company" required="" placeholder="" autocomplete="organization" data-reactid=".hbspt-forms-0.0:$1.1:$company.$company.0"></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$2">
+                      <div class="hs_email hs-email hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$2.1:$email"><label id="label-email-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Email" for="email-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$2.1:$email.0"><span data-reactid=".hbspt-forms-0.0:$2.1:$email.0.0">Email</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$2.1:$email.0.1">*</span></label>
+                        <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$2.1:$email.1"></legend>
+                        <div class="input" data-reactid=".hbspt-forms-0.0:$2.1:$email.$email"><input id="email-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="email" name="email" required="" placeholder="" autocomplete="email" data-reactid=".hbspt-forms-0.0:$2.1:$email.$email.0"></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$3">
+                      <div class="hs_phone hs-phone hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$3.1:$phone"><label id="label-phone-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Phone number" for="phone-99694ccd-c72b-4d24-a287-8433f3a3612a_2307"><span data-reactid=".hbspt-forms-0.0:$3.1:$phone.0.0">Phone number</span><span class="hs-form-required">*</span></label>
+                        <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$3.1:$phone.1"></legend>
+                        <div class="input" data-reactid=".hbspt-forms-0.0:$3.1:$phone.$phone"><input id="phone-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="tel" name="phone" required="" placeholder="" autocomplete="tel" data-reactid=".hbspt-forms-0.0:$3.1:$phone.$phone.0"></div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$4">
+                      <div class="hs_lifecyclestage hs-lifecyclestage hs-fieldtype-radio field hs-form-field" style="display:none;" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage"><label id="label-lifecyclestage-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Lifecycle Stage" for="lifecyclestage-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.0"><span data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.0.0">Lifecycle Stage</span></label>
+                        <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.1"></legend>
+                        <div class="input" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.$lifecyclestage"><input name="lifecyclestage" class="hs-input" type="hidden" value="salesqualifiedlead" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.$lifecyclestage.0"></div>
+                      </div>
+                    </fieldset>
+                    <div class="hs_submit hs-submit" data-reactid=".hbspt-forms-0.3">
+                      <div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.3.0"></div>
+
+                      <a class="buttons" href="#0">Let's get started!</a>
+
+                      </span>
+                    </div>
+                    <!--end layout-widget-wrapper -->
+                </div>
+                <!--end widget-span -->
+              </div>
+              <!--end row-->
+            </div>
+            <!--end row-wrapper -->
+
           </div>
           <!--end widget-span -->
         </div>
@@ -141,81 +215,15 @@
       </div>
       <!--end row-wrapper -->
 
-      <div class="row-fluid-wrapper row-depth-1 row-number-3">
-        <div class="row-fluid ">
-          <div class="span12 widget-span widget-type-form " style="" data-widget-type="form" data-x="0" data-w="12">
-            <div class="cell-wrapper layout-widget-wrapper">
-              <span id="hs_cos_wrapper_module_15232924015675" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget"><h3 id="hs_cos_wrapper_module_15232924015675_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Schedule a Demo<br><span class="form-sub-header sub-header-line-1">No Setup Fee. No Contracts. Starting at $99/mo.</span></h3>
-
-              <div id="hs_form_target_module_15232924015675">
-                <form novalidate="" accept-charset="UTF-8" action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/1694637/99694ccd-c72b-4d24-a287-8433f3a3612a" enctype="multipart/form-data" id="hsForm_99694ccd-c72b-4d24-a287-8433f3a3612a_2307"
-                  method="POST" class="hs-form stacked hs-custom-form hs-form-private hs-form-99694ccd-c72b-4d24-a287-8433f3a3612a_8f09ebb8-e4cf-422e-90e9-fa0ca5b8abf9" data-form-id="99694ccd-c72b-4d24-a287-8433f3a3612a" data-portal-id="1694637" target="target_iframe_99694ccd-c72b-4d24-a287-8433f3a3612a_2307"
-                  data-reactid=".hbspt-forms-0">
-                  <fieldset class="form-columns-2" data-reactid=".hbspt-forms-0.0:$0">
-                    <div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$firstname"><label id="label-firstname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your First name" for="firstname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0.0">First name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0.1">*</span></label>
-                      <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.1"></legend>
-                      <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.$firstname"><input id="firstname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="text" name="firstname" required="" placeholder="" autocomplete="given-name" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.$firstname.0" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"></div>
-                    </div>
-                    <div class="hs_lastname hs-lastname hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$lastname"><label id="label-lastname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Last name" for="lastname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0.0">Last name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0.1">*</span></label>
-                      <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.1"></legend>
-                      <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.$lastname"><input id="lastname-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="text" name="lastname" required="" placeholder="" autocomplete="family-name" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.$lastname.0"></div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$1">
-                    <div class="hs_company hs-company hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$1.1:$company"><label id="label-company-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Practice Name" for="company-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$1.1:$company.0"><span data-reactid=".hbspt-forms-0.0:$1.1:$company.0.0">Practice Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$1.1:$company.0.1">*</span></label>
-                      <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$1.1:$company.1"></legend>
-                      <div class="input" data-reactid=".hbspt-forms-0.0:$1.1:$company.$company"><input id="company-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="text" name="company" required="" placeholder="" autocomplete="organization" data-reactid=".hbspt-forms-0.0:$1.1:$company.$company.0"></div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$2">
-                    <div class="hs_email hs-email hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$2.1:$email"><label id="label-email-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Email" for="email-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$2.1:$email.0"><span data-reactid=".hbspt-forms-0.0:$2.1:$email.0.0">Email</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$2.1:$email.0.1">*</span></label>
-                      <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$2.1:$email.1"></legend>
-                      <div class="input" data-reactid=".hbspt-forms-0.0:$2.1:$email.$email"><input id="email-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="email" name="email" required="" placeholder="" autocomplete="email" data-reactid=".hbspt-forms-0.0:$2.1:$email.$email.0"></div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$3">
-                    <div class="hs_phone hs-phone hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.0:$3.1:$phone"><label id="label-phone-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Phone number" for="phone-99694ccd-c72b-4d24-a287-8433f3a3612a_2307"><span data-reactid=".hbspt-forms-0.0:$3.1:$phone.0.0">Phone number</span><span class="hs-form-required">*</span></label>
-                      <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$3.1:$phone.1"></legend>
-                      <div class="input" data-reactid=".hbspt-forms-0.0:$3.1:$phone.$phone"><input id="phone-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="hs-input" type="tel" name="phone" required="" placeholder="" autocomplete="tel" data-reactid=".hbspt-forms-0.0:$3.1:$phone.$phone.0"></div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$4">
-                    <div class="hs_lifecyclestage hs-lifecyclestage hs-fieldtype-radio field hs-form-field" style="display:none;" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage"><label id="label-lifecyclestage-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" class="" placeholder="Enter your Lifecycle Stage" for="lifecyclestage-99694ccd-c72b-4d24-a287-8433f3a3612a_2307" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.0"><span data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.0.0">Lifecycle Stage</span></label>
-                      <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.1"></legend>
-                      <div class="input" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.$lifecyclestage"><input name="lifecyclestage" class="hs-input" type="hidden" value="salesqualifiedlead" data-reactid=".hbspt-forms-0.0:$4.1:$lifecyclestage.$lifecyclestage.0"></div>
-                    </div>
-                  </fieldset>
-                  <div class="hs_submit hs-submit" data-reactid=".hbspt-forms-0.3">
-                    <div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.3.0"></div>
-
-                    <a class="buttons" href="#0">Let's get started!</a>
-
-                    </span>
-                  </div>
-                  <!--end layout-widget-wrapper -->
-              </div>
-              <!--end widget-span -->
-            </div>
-            <!--end row-->
-          </div>
-          <!--end row-wrapper -->
-
-        </div>
-        <!--end widget-span -->
-      </div>
-      <!--end row-->
     </div>
-    <!--end row-wrapper -->
-
+    <!--end footer -->
   </div>
-  <!--end footer -->
-</div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
 
-  
 
-    <script  src="js/index.js"></script>
+
+  <script src="js/index.js"></script>
 
 
 
